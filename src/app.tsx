@@ -5,17 +5,16 @@ import { routes } from './routes';
 
 const App: Component = () => {
 
-  const location = useLocation();
-  const Route = useRoutes(routes);
+	const location = useLocation();
+	const Route = useRoutes(routes);
 
-  return (
-    <>
-
-      <main class="min-h-screen  bg-black">
-        <Route />
-      </main>
-    </>
-  );
+	return (
+		<>
+			<main class="min-h-screen bg-black">
+				<Route />
+			</main>
+		</>
+	);
 };
 
 export default App;

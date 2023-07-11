@@ -7,16 +7,16 @@ import App from './app';
 const root = document.getElementById('root');
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
-  throw new Error(
-    'Root element not found.',
-  );
+	throw new Error(
+		'Root element not found.',
+	);
 }
 
 render(
-  () => (
-    <Router>
-      <App />
-    </Router>
-  ),
-  root,
+	() => (
+		<Router>
+			<App />
+		</Router>
+	),
+	root,
 );
